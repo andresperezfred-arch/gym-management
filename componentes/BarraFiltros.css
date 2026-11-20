@@ -1,0 +1,7 @@
+.molecula-barra-filtros {
+  display: flex;
+  justify-content: space-between;
+  gap: 6px;
+  padding: 10px 12px;
+  background-color: #0d0d0d;
+}

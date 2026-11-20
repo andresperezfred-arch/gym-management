@@ -1,0 +1,35 @@
+.molecula-tarjeta-miembro {
+  background-color: #0d0d0d;
+  border: 1px solid #9be214;
+  border-radius: 12px;
+  padding: 10px 8px 8px 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #ffffff;
+}
+.tarjeta-cabecera {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+.tarjeta-eliminar {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.tarjeta-datos {
+  font-size: 11px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+.dato-label {
+  color: #9be214;
+}
+.tarjeta-acciones {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #262626;
+  padding-top: 6px;
+}

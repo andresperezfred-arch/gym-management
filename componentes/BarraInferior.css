@@ -1,0 +1,27 @@
+.molecula-barra-inferior {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 390px;
+  background-color: #2b2b2b;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 4px;
+  border-top: 1px solid #3d3d3d;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  z-index: 20;
+}
+
+.molecula-barra-inferior .atomo-icono-etiqueta {
+  color: #cccccc;
+  font-weight: normal;
+  font-size: 9px;
+}
+
+.molecula-barra-inferior .atomo-icono-accion:first-child .atomo-icono-etiqueta {
+  color: #9be214;
+  font-weight: bold;
+}

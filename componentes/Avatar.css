@@ -1,0 +1,7 @@
+.atomo-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #9be214;
+}

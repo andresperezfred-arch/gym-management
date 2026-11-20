@@ -1,0 +1,23 @@
+.atomo-busqueda-contenedor {
+  display: flex;
+  align-items: center;
+  background-color: #111111;
+  border-radius: 12px;
+  padding: 6px 12px;
+  flex: 1;
+}
+
+.atomo-busqueda-icono {
+  color: #9be214;
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.atomo-busqueda-input {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  outline: none;
+  width: 100%;
+  font-size: 13px;
+}
