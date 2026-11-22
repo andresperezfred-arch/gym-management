@@ -47,7 +47,7 @@ export default function FormularioMiembro() {
         throw new Error("No se pudo guardar en MockAPI");
       }
 
-      window.location.href = "/";
+      window.location.href = "/members";
     } catch (error) {
       alert("Error al conectar con MockAPI. Revisa tu conexión.");
       setGuardando(false);

@@ -18,6 +18,7 @@ export default function VistaMiembros({ members }: { members: Member[] }) {
         <div className="header-top">
           <button
             type="button"
+            onClick={() => router.push("/")}
             style={{
               background: "transparent",
               border: "none",

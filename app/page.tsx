@@ -1,11 +1,9 @@
-import VistaMiembros from "@/componentes/VistaMiembros";
+import { SelectPlanSection } from "@/components/organisms/SelectPlanSection";
 
-export default async function Home() {
-  const data = await fetch(
-    "https://6b006aee7fc363ccff0a304e.mockapi.io/api/v1/miembros",
-    { cache: "no-store" }
+export default function HomePage() {
+  return (
+    <main className="min-h-screen bg-black">
+      <SelectPlanSection />
+    </main>
   );
-  const members = await data.json();
-
-  return <VistaMiembros members={members} />;
 }
