@@ -1,0 +1,12 @@
+.atomo-radio-svg {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #9be214;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+}

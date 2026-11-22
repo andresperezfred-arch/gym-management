@@ -1,0 +1,11 @@
+.atomo-input-linea {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1.5px dashed #888888;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 2px 4px;
+  outline: none;
+}

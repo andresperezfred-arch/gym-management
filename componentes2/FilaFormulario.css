@@ -1,0 +1,19 @@
+.molecula-fila-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.form-etiqueta {
+  color: #9be214;
+  font-size: 17px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.form-control {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}

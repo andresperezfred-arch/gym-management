@@ -1,0 +1,12 @@
+.atomo-btn-upload {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border: 1px solid #888888;
+  border-radius: 14px;
+  color: #cccccc;
+  font-size: 11px;
+  padding: 4px 24px;
+  cursor: pointer;
+}

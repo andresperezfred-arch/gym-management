@@ -1,5 +1,6 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import BarraBusquedaSms from "./BarraBusquedaSms";
 import BarraFiltros from "./BarraFiltros";
 import TarjetaMiembro, { Member } from "./TarjetaMiembro";
@@ -8,6 +9,8 @@ import BarraInferior from "./BarraInferior";
 import "./VistaMiembros.css";
 
 export default function VistaMiembros({ members }: { members: Member[] }) {
+  const router = useRouter();
+
   return (
     <div className="container">
       {/* Encabezado verde superior */}
@@ -47,8 +50,12 @@ export default function VistaMiembros({ members }: { members: Member[] }) {
           ))}
       </section>
 
-      {/* Botón flotante rojo + */}
-      <Boton texto="+" variante="flotante" />
+      {/* Botón flotante rojo + que abre Add Member */}
+      <Boton
+        texto="+"
+        variante="flotante"
+        onClick={() => router.push("/add-member")}
+      />
 
       {/* Barra inferior oscura */}
       <BarraInferior />

@@ -1,0 +1,29 @@
+.molecula-header-add {
+  background-color: #9be214;
+  padding: 8px 14px 10px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-add-titulo-fila {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.btn-volver {
+  background: transparent;
+  border: none;
+  color: #111111;
+  font-size: 32px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.titulo-add-member {
+  color: #111111;
+  font-size: 16px;
+  font-weight: bold;
+}
