@@ -48,7 +48,7 @@ export function SelectPlanSection() {
   useEffect(() => {
     const apiUrl =
       process.env.NEXT_PUBLIC_MOCKAPI_PLANS_URL ||
-      "https://6b004d1e7fc363ccff0a050f.mockapi.io/api/v1/planes";
+      "https://6b06e0fb57fa1297bb565b8d.mockapi.io/api/v1/registro";
 
     let isMounted = true;
 

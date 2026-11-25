@@ -20,7 +20,7 @@ export default function VistaMiembros({ members }: { members: Member[] }) {
     if (!confirmar) return;
 
     const respuesta = await fetch(
-      `https://mockapi.io{id}`,
+      `https://6b006aee7fc363ccff0a304e.mockapi.io/api/v1/miembros/${id}`,
       { method: "DELETE" }
     );
 
