@@ -11,12 +11,22 @@ export interface Member {
   dueAmount: string;
 }
 
-export default function TarjetaMiembro({ member }: { member: Member }) {
+interface TarjetaMiembroProps {
+  member: Member;
+  onDelete: (id: string) => void;
+}
+
+export default function TarjetaMiembro({ member, onDelete }: TarjetaMiembroProps) {
   return (
     <div className="molecula-tarjeta-miembro">
       <div className="tarjeta-cabecera">
         <Avatar src={member.avatar} alt={member.name} />
-        <div className="tarjeta-eliminar">
+        <div
+          className="tarjeta-eliminar"
+          onClick={() => onDelete(member.id)}
+          style={{ cursor: "pointer" }}
+          title="Eliminar miembro"
+        >
           <IconoAccion icono="/basurero.svg" />
         </div>
       </div>

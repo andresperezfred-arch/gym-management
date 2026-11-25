@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { useRouter } from "next/navigation";
 import BarraBusquedaSms from "./BarraBusquedaSms";
 import BarraFiltros from "./BarraFiltros";
@@ -10,6 +11,25 @@ import "./VistaMiembros.css";
 
 export default function VistaMiembros({ members }: { members: Member[] }) {
   const router = useRouter();
+  const [listaMiembros, setListaMiembros] = useState<Member[]>(
+    Array.isArray(members) ? members : []
+  );
+
+  const handleEliminar = async (id: string) => {
+    const confirmar = confirm("¿Seguro que deseas eliminar este miembro?");
+    if (!confirmar) return;
+
+    const respuesta = await fetch(
+      `https://mockapi.io{id}`,
+      { method: "DELETE" }
+    );
+
+    if (respuesta.ok) {
+      setListaMiembros((prev) => prev.filter((m) => m.id !== id));
+    } else {
+      alert("No se pudo eliminar el registro en MockAPI.");
+    }
+  };
 
   return (
     <div className="container">
@@ -45,10 +65,13 @@ export default function VistaMiembros({ members }: { members: Member[] }) {
 
       {/* Cuadrícula de 2 columnas con tus miembros de la API */}
       <section className="organismo-grid-miembros">
-        {Array.isArray(members) &&
-          members.map((member) => (
-            <TarjetaMiembro key={member.id} member={member} />
-          ))}
+        {listaMiembros.map((member) => (
+          <TarjetaMiembro
+            key={member.id}
+            member={member}
+            onDelete={handleEliminar}
+          />
+        ))}
       </section>
 
       {/* Botón flotante rojo + que abre Add Member */}
